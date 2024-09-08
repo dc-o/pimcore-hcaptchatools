@@ -1,0 +1,29 @@
+{
+  "name": "dc-o/pimcore-hcaptchatools",
+  "type": "pimcore-bundle",
+  "description": "HCaptcha tool to check hcaptcha results",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Korbinian Ober",
+      "email": "korbinian@dc-o.de"
+    }
+  ],
+  "require": {
+    "pimcore/pimcore": ">=11.0.0",
+    "ext-curl": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "DCO\\HcaptchaTools\\": "src/"
+    }
+  },
+  "extra": {
+    "pimcore": {
+      "bundles": [
+        "DCO\\HcaptchaTools\\HcaptchaToolsBundle"
+      ]
+    }
+  }
+}
